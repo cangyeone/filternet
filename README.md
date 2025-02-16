@@ -6,7 +6,7 @@ You can use train.xx.py to train the models.
 and use the mkjit.xx.py to generate the inference model. 
 you can directly load the model by：
 
-'''Python
+```python
 import numpy as np 
 import torch 
 
@@ -18,4 +18,4 @@ filter.eval()
 orignal_data = torch.randn([512, 1024])
 with torch.no_grad():
     filtered_data = filter(orignal_data)
-'''
+```
